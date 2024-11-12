@@ -24,33 +24,33 @@
         </div>
         <div class="calculator-buttons">
             <div class="button-row">
-                <Button class="button-gray">C</Button>
-                <Button class="button-gray">CE</Button>
-                <Button class="button-gray">x^2</Button>
-                <Button class="button-gray">/</Button>
+                <Button class="button-gray" onclick="SetToZero()">C</Button>
+                <Button class="button-gray" onclick="ResetCalculator()">CE</Button>
+                <Button class="button-gray" onclick="FunctionalButton('Square')">x^2</Button>
+                <Button class="button-gray" onclick="SetSideDisplay('/')">/</Button>
             </div>
             <div class="button-row">
-                <Button class="button-black">7</Button>
-                <Button class="button-black">8</Button>
-                <Button class="button-black">9</Button>
-                <Button class="button-gray">*</Button>
+                <Button class="button-black" onclick="NumButton(7)">7</Button>
+                <Button class="button-black" onclick="NumButton(8)">8</Button>
+                <Button class="button-black" onclick="NumButton(9)">9</Button>
+                <Button class="button-gray" onclick="SetSideDisplay('*')">*</Button>
             </div>
             <div class="button-row">
-                <Button class="button-black">4</Button>
-                <Button class="button-black">5</Button>
-                <Button class="button-black">6</Button>
-                <Button class="button-gray">-</Button>
+                <Button class="button-black" onclick="NumButton(4)">4</Button>
+                <Button class="button-black" onclick="NumButton(5)">5</Button>
+                <Button class="button-black" onclick="NumButton(6)">6</Button>
+                <Button class="button-gray" onclick="SetSideDisplay('-')">-</Button>
             </div>
             <div class="button-row">
-                <Button class="button-black">1</Button>
-                <Button class="button-black">2</Button>
-                <Button class="button-black">3</Button>
-                <Button class="button-gray">+</Button>
+                <Button class="button-black" onclick="NumButton(1)">1</Button>
+                <Button class="button-black" onclick="NumButton(2)">2</Button>
+                <Button class="button-black" onclick="NumButton(3)">3</Button>
+                <Button class="button-gray" onclick="SetSideDisplay('+')">+</Button>
             </div>
             <div class="button-row">
-                <Button class="button-gray">±</Button>
-                <Button class="button-gray">0</Button>
-                <Button class="button-gray">.</Button>
+                <Button class="button-gray" onclick="FunctionalButton('SetOpposite')">±</Button>
+                <Button class="button-gray" onclick="NumButton(0)">0</Button>
+                <Button class="button-gray" onclick="FunctionalButton(',')">.</Button>
                 <Button class="button-green">=</Button>
             </div>
         </div>

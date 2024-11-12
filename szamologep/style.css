@@ -17,6 +17,23 @@
 
 .calculator-display{
     height: 32%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.main-disp{
+    height: 20%;
+    width: 100%;
+    font-size: xx-large;
+    text-align: right;
+}
+
+.side-disp{
+    height: 20%;
+    width: 100%;
+    font-size: small;
+    text-align: right;
 }
 
 .calculator-buttons{
