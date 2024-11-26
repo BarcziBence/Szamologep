@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="calculator-icon">
+        <Button>Open</Button onclick="ShowCalculator()">
+    </div>
     <div class="calculator" id="calculator">
         <div class="calculator-bar">
-            <p>Calculator</p>
+            <Button>_</Button onclick="_Calculator()">
             <Button></Button>
-            <Button></Button>
-            <Button></Button>
+            <Button>X</Button onclick="CloseCalculator()">
         </div>
         <div class="calculator-display">
             <div class="side-disp">
@@ -50,7 +52,7 @@
             <div class="button-row">
                 <Button class="button-gray" onclick="FunctionalButton('SetOpposite')">±</Button>
                 <Button class="button-gray" onclick="NumButton(0)">0</Button>
-                <Button class="button-gray" onclick="FunctionalButton(',')">.</Button>
+                <Button class="button-gray" onclick="FunctionalButton('.')">.</Button>
                 <Button class="button-green" onclick="Calculate()">=</Button>
             </div>
         </div>
